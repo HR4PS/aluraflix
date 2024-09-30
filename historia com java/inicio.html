@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Tipo de documento que iremos trabalhar  -->
+<html lang="pt-br"> <!-- tipo de linguagem -->
+<head> <!-- local onde armazenamos o style, script, ou links para outros navegadores e documentos -->
+    <meta charset="UTF-8"> <!-- tipo de varchar que contém inúmeros caracteres e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tipo de escala do site  -->
+    <title>Alura Flix Project</title> <!-- título do site  -->
+    <link rel="stylesheet" href="style.css"> <!-- link que conecta o HTML com o CSS para que possa ser editado -->
+    <style> /*editor do CSS no HTML, geralmente para alocar animações */
+
+
+.star {  
+    position: absolute; /*posiciona as estrelas na frente de todo conteúdo*/
+    width: 2px; /*tamanho das estrelas*/
+    height: 2px;
+    background-color: rgb(8, 248, 0); /*Coloca uma cor de fundo das estrelas */
+    border-radius: 50%; /*borda que define o modelo da estrela*/
+    animation: twinkle 2s infinite ease-in-out; /*tipo de animação usada*/
+    
+}
+
+@keyframes twinkle { /*reliza a animação de piscar nas estrelas*/
+    0%, 100% {
+        opacity: 1.5; 
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+    </style>
+</head>
+<body>
+<header> <!-- Cabeçalho do site  -->
+    <h1>Prólogo</h1> <!-- H1 = título  -->
+</header>
+    
+
+    <div class="txt"> <!-- div de um texto -->
+        <p>Você é um jovem de 17 anos que morava na cidade, porém, seus pais estão passando problemas financeiros e vocês tiveram que se mudar para uma cidade pequena chamada Xique-Xique (Bahia), durante a mudança, um homem de chapéu e capa pergunta se você quer ajuda para descarregar o caminhão.</p>
+    </div>
+
+
+    <!-- button = cria um botão -->
+     <!-- a = cria um link para onde este botão ou conteúdo vai te levar  -->
+
+    <button><a href="#">Aceitar ajuda</a></button> 
+    <button><a href="pt1.html">Recusar ajuda</a></button>
+
+
+    <!-- ANIMAÇÃO DO SITE -->
+
+
+    <div class="sky"> <!-- div criada para alocar as estrelas -->
+        <div class="star"></div> <!-- cria um ponto para definir a estrela -->
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div> <!-- fecha o sky -->
+
+
+    
+
+    <script src="script.js"></script> <!-- permite que o HTML se comunique com o JS -->
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminho do herói</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/x-icon">
+
+
+    <style>
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: rgb(8, 248, 0);
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1.5;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Prólogo</h1>
+    <button><a href="inicio.html">voltar</a></button>
+</header>
+    
+
+    <div class="txt">
+        <p>
+            Você recusa a ajuda do homem, então decide continuar a mudança, depois de algumas semanas o se pai te matriculou em uma escola
+            da cidade, você no momento não tem amigos pois ainda é novo na escola. <br>
+            quando estava voltando para casa, você vê um senhor de idade perdido, o que você deseja fazer?
+        </p>
+    </div>
+
+    <button><a href="#">Passar reto</a></button>
+    <button><a href="pt2.html">Ajudar o senhor</a></button>
+
+
+    <!-- ANIMAÇÃO DO SITE -->
+    <div class="sky">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <audio src="sound/17 - The White Lady 1.mp3"></audio>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
